@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300;400&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+.navbar {
+  background-color: #F44336;
+  padding: 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 10; }
+  .navbar .nav-item.active {
+    background-color: #ffffff; }
+    .navbar .nav-item.active .nav-link {
+      color: #000000; }
+  .navbar .nav-item:hover {
+    background-color: #ffffff; }
+    .navbar .nav-item:hover .nav-link {
+      color: #000000; }
+
+header {
+  min-height: 500px;
+  background-color: #F44336; }
+  header .header-info {
+    color: #ffffff; }
+    header .header-info h1 {
+      font-size: 72px; }
+    header .header-info h4 {
+      margin-top: 35px; }
+
+button {
+  background-color: #000000;
+  border-radius: 0px;
+  width: 170px;
+  height: 50px;
+  border: none;
+  margin-top: 35px; }
+  button .white {
+    padding-top: 11px;
+    color: #ffffff; }
+
+button:hover {
+  background: #212121;
+  outline: none; }
+
+button:active {
+  transform: translateY(2px);
+  outline: none; }
+
+@media (max-width: 767px) {
+  header .header-info h1 {
+    font-size: 32px; } }
+section {
+  min-height: 450px; }
+  section.first .t1 {
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  section.first .t2 {
+    font-size: 15px;
+    color: #757575;
+    line-height: 22px; }
+  section.second {
+    background-color: #F1F1F1; }
+    section.second .t3 {
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 25px;
+      padding-bottom: 25px; }
+    section.second .t4 {
+      font-size: 15px;
+      color: #757575;
+      line-height: 22px; }
+
+footer .third {
+  height: 196px;
+  background-color: #000000; }
+  footer .third .tx {
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 36px; }
+footer .four {
+  height: 280px;
+  background-color: #ffffff; }
+  footer .four .ty {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 27px; }
+
+.five .tz {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px; }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff; }
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 1px 1px 20px #000000; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300;400&display=swap');
+$color-p: #F44336;
+$color-hover: #212121;
+$color-t2: #757575;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-grey: #F1F1F1;
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+  background-color:$color-p;
+  padding: 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 10;
+  .nav-item{
+    &.active{
+      background-color: $color-white;
+    .nav-link{
+      color: $color-black;
+    }
+  }
+  &:hover{
+    background-color: $color-white;
+  .nav-link{
+    color: $color-black;
+  }
+}
+}
+}
+////////////////////////////////////////////////////////////////////
+header{
+  min-height: 500px;
+  background-color:$color-p;
+  .header-info{
+    color:$color-white;
+    h1{
+      font-size: 72px;
+    }
+    h4{
+      margin-top: 35px;
+    }
+  }
+}
+
+button{
+  background-color: $color-black;
+  border-radius: 0px;
+  width: 170px;
+  height: 50px;
+  border: none;
+  margin-top: 35px;
+  .white{
+    padding-top: 11px;
+    color: $color-white;
+  }
+}
+button:hover {
+  background: $color-hover;
+  outline: none; }
+
+button:active {
+  transform: translateY(2px);
+  outline: none; }
+
+@media (max-width:767px){
+  header{
+    .header-info{
+      h1{
+        font-size: 32px;
+      }
+    }
+  }
+}
+///////////////////////////////////////////////////////////////////
+section{
+  min-height: 450px;
+  &.first{
+    .t1{
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .t2{
+      font-size: 15px;
+      color: $color-t2;
+      line-height: 22px;
+    }
+  }
+  &.second{
+    background-color: $color-grey;
+    .t3{
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .t4{
+      font-size: 15px;
+      color: $color-t2;
+      line-height: 22px;
+    }
+  }
+}
+footer{
+  .third{
+      height: 196px;
+      background-color:$color-black;
+      .tx{
+        color: $color-white;
+        font-size: 23px;
+        line-height: 36px;
+      }
+  }
+  .four{
+      height: 280px;
+      background-color:$color-white;
+      .ty{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 27px;
+      }
+    }
+  }
+  .five{
+      .tz{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+///////////////////////////////////////////////////////////////////////////////
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: $color-white;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 1px 1px 20px #000000;
+}
