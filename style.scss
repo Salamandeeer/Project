@@ -1,144 +1,473 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300;400&display=swap');
-$color-p: #F44336;
-$color-hover: #212121;
-$color-t2: #757575;
-$color-black: #000000;
-$color-white: #ffffff;
-$color-grey: #F1F1F1;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+$white: white;
+$bgr:  #21C87A;
+$bgrl: #25d985;
+$bgrd: #21a66b;
+$bl:   #E3E6F0;
+$gr:   #212529;
+$lgr:  #646F79;
+$lbl:  #F5F8FB;
+$vio:  #796EFF;
+$bl:   #151B26;
+$llgr: #8C98A4;
+
+html{
+  overflow-x: hidden;
+}
 *{
-  font-family: 'Montserrat', sans-serif;
-}
+  font-family: 'Roboto', sans-serif;}
+
 .navbar{
-  background-color:$color-p;
-  padding: 0;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
-  position: relative;
-  z-index: 10;
-  .nav-item{
-    &.active{
-      background-color: $color-white;
-    .nav-link{
-      color: $color-black;
-    }
-  }
-  &:hover{
-    background-color: $color-white;
-  .nav-link{
-    color: $color-black;
-  }
-}
-}
-}
-////////////////////////////////////////////////////////////////////
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.15);}
+
+.cub{
+    padding: 5px;
+    margin-top: 5px;}
+
 header{
-  min-height: 500px;
-  background-color:$color-p;
-  .header-info{
-    color:$color-white;
-    h1{
-      font-size: 72px;
-    }
-    h4{
-      margin-top: 35px;
-    }
-  }
+   min-height: 767px;
+   background: url("Photo/Rectangle.png") no-repeat;
+   background-size: cover;
+   background-position: top center;}
+
+.navbar-brand{
+   position: relative;}
+
+.navbar-brand::after{
+   content: "";
+   position: absolute;
+   width: 1px;
+   height: 70px;
+   background: rgba(255, 255, 255, 0.15);;
+   right: -15px;
+   top: -12px;}
+
+.button1{
+  position: relative;}
+
+.button1::after{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.15);;
+  right: -15px;
+  top: -15px;}
+
+.frm{
+   padding-left: 40px;
+   width: 445px;
+   height: 402px;
+   background: $white;
+   box-shadow: 0px 0px 35px rgba(140, 152, 164, 0.125);
+   border-radius: 4px;}
+
+.h1{
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  height: 202px;
+  font-size: 56px;
+  line-height: 67px;
+  font-weight: normal;
+  color: $white;}
+
+.h3{
+  padding-top: 80px;
+  position: relative;
+  width: 135px;
+  height: 28px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: $white;}
+
+h2{
+  padding: 40px;
+  width: 204px;
+  height: 36px;
+  font-size: 24px;
+  line-height: 36px;
+  color: black;
 }
 
-button{
-  background-color: $color-black;
-  border-radius: 0px;
-  width: 170px;
-  height: 50px;
-  border: none;
-  margin-top: 35px;
-  .white{
-    padding-top: 11px;
-    color: $color-white;
-  }
-}
-button:hover {
-  background: $color-hover;
-  outline: none; }
+.button1{
+  width: 98px;
+  height: 44px;
+  background: $bgr;
+  border: 2px solid $bgr;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;}
 
-button:active {
-  transform: translateY(2px);
-  outline: none; }
+.button2{
+  width: 365px;
+  height: 54px;
+  background: $bgr;
+  border: 2px solid $bgr;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;}
 
-@media (max-width:767px){
-  header{
-    .header-info{
-      h1{
-        font-size: 32px;
-      }
-    }
-  }
-}
-///////////////////////////////////////////////////////////////////
+.button1:hover {
+  transition: all 0.5s ease-out;
+  background-color:$bgrd;}
+
+.button2:hover {
+  transition: all 0.5s ease-out;
+  background-color:$bgrd;}
+
+.input{
+  padding: 13px;
+  outline: inherit;
+  width: 365px;
+  height: 53px;
+  background: $white;
+  border: 1px solid #E3E6F0;
+  box-sizing: border-box;
+  border-radius: 4px;}
+///////////////////////////////////////////////////////////////////////////////
 section{
-  min-height: 450px;
   &.first{
-    .t1{
-      font-size: 18px;
-      line-height: 27px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-    .t2{
-      font-size: 15px;
-      color: $color-t2;
-      line-height: 22px;
+    min-height: 150px;
+    .company{
+      padding: 55px;
     }
   }
   &.second{
-    background-color: $color-grey;
-    .t3{
-      font-size: 18px;
-      line-height: 27px;
-      padding-top: 25px;
-      padding-bottom: 25px;
+    min-height: 700px;
+    .se1{
+    width: 231px;
+    height: 108px;
+    font-size: 24px;
+    line-height: 36px;
+    color: $gr;
     }
-    .t4{
+  .nav-link{
+      color: $lgr;
       font-size: 15px;
-      color: $color-t2;
-      line-height: 22px;
+    }
+  .nav-link:hover{
+      transition: all 0.7s ease-out;
+      color: $bgr;
+    }
+  .far1{
+      width: 313px;
+      height: 109px;
+      font-size: 16px;
+      line-height: 27px;
+      color: $lgr;
+    }
+  .far{
+      width: 84px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 27px;
+      color: $bgr;
+    }
+  }
+  &.third{
+    min-height: 900px;
+    background: $lbl;
+  .h11{
+    width: 501px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: $gr;
+    }
+  .h31{
+    width: 666px;
+    height: 68px;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: $lgr;
+    }
+  .button3{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: $vio;
+    width: 99px;
+    height: 36px;
+    background: rgba(121, 110, 255, 0.1);
+    border-radius: 99px;
+    border: 0px;
+    }
+  .tx{
+    padding-top: 30px;
+    }
+    #myCarousel{
+      padding-top: 30px;
+    }
+  }
+  &.four{
+    min-height: 900px;
+    background: $white;
+  .h12{
+    width: 596px;
+    height: 48px;
+    font-size: 31px;
+    line-height: 48px;
+    text-align: center;
+    color: $gr;
+    }
+  .h32{
+    width: 495px;
+    height: 28px;
+    font-size: 15px;
+   line-height: 27px;
+   text-align: center;
+   color: $lgr;
+    }
+  .tx{
+    padding-top: 30px;
+    }
+  .button3{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: $vio;
+    width: 99px;
+    height: 36px;
+    background: rgba(121, 110, 255, 0.1);
+    border-radius: 99px;
+    border: 0px; }
+  .button4{
+    width: 284px;
+    height: 44px;
+    background: $lbl;
+    border: 2px solid $lbl;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+  .button5{
+    width: 284px;
+    height: 44px;
+    background: $vio;
+    border: 2px solid $vio;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: $white;
+  }
+  .button6{
+   font-size: 12px;
+   line-height: 20px;
+   color: $white;
+   width: 113px;
+   height: 36px;
+   background: $bgrl;
+   border-radius: 99px;
+   border: 0px;
+  }
+  .tt{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 490px;
+    width: 410px;
+    background: $bgr;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .td{
+    height: 446px;
+    width: 350px;
+    border: 1px solid $lbl;
+  }
+  }
+  &.five{
+    min-height: 390px;
+    .MM{
+    font-size: 16px;
+    text-align: center;
+    color: $gr;
+    }
+    .t1{
+    width: 390px;
+    height: 109px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    color: $lgr;
+    }
+    .portret{
+    display: block;
+    margin: 0 auto;
+    }
+  }
+  &.six{
+    height: 252px;
+    background: url(Photo/фон.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    .s1{
+    width: 322px;
+    height: 48px;
+    font-size: 31px;
+    line-height: 48px;
+    color: $white;
+    }
+    .s2{
+    width: 601px;
+    height: 68px;
+    font-size: 20px;
+    line-height: 34px;
+    color: $white;
+    }
+    .s3{
+    width: 176px;
+    height: 54px;
+    background: $vio;
+    border: 2px solid $vio;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: $white;
+    margin-right: 15px;
+    }
+    .s4{
+    width: 115px;
+    height: 54px;
+    background: $lbl;
+    border: 2px solid $lbl;
+    box-sizing: border-box;
+    border-radius: 4px;
     }
   }
 }
-footer{
-  .third{
-      height: 196px;
-      background-color:$color-black;
-      .tx{
-        color: $color-white;
-        font-size: 23px;
-        line-height: 36px;
-      }
-  }
-  .four{
-      height: 280px;
-      background-color:$color-white;
-      .ty{
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 27px;
-      }
-    }
-  }
-  .five{
-      .tz{
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 27px;
-      }
-    }
 ///////////////////////////////////////////////////////////////////////////////
-::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    background-color: $color-white;
+footer{
+   height: 348px;
+   background: $bl;
+   border-radius: 0px;
+   .bt{
+   width: 109px;
+   height: 41px;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   box-sizing: border-box;
+   border-radius: 4px;
+   background: $bl;
+   color: $lgr;
+   }
+   .pt{
+   padding-top: 90px;
+   width: 263px;
+   font-size: 12px;
+   line-height: 22px;
+   color: $llgr;
+   }
+   .foot{
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.7);
+   }
+   .vv{
+     font-size: 15px;
+   }
+}
+/////////////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 768px) {
+header .h1{
+  font-size: 32px;
+}
+section.second .se1 {
+  font-size: 17px;
+  width: 170px;
+}
+section.second .far1 {
+  font-size: 15px;
+  width: 270px;
+}
+section.second .far {
+  font-size: 12px;
+}
+footer .vv {
+  font-size: 10px;
+}
+footer .foot {
+  font-size: 8px;
+  height: 12px;
+}
+section.four .tt{
+  margin-left: none;
+  margin-right: none;
+}
+section.six .s2{
+  font-size: 14px;
+  width: 290px;
+}
 }
 
-::-webkit-scrollbar-thumb {
-    box-shadow: inset 1px 1px 20px #000000;
+@media screen and (max-width: 430px) {
+  .input{
+    width: 250px;
+    height: 45px;
+  }
+  .button2{
+    width: 250px;
+    height: 45px;
+  }
+  section.second .se1 {
+    line-height: 22px;
+    font-size: 12px;
+    width: 80px;
+  }
+  section.second .nav-link {
+    font-size: 10px;
+  }
+  section.second .far1 {
+    font-size: 12px;
+    width: 220px;
+    padding-left: 8px;
+  }
+  section.second .far {
+    font-size: 10px;
+    padding-left: 8px;
+  }
+  section.third{
+    min-height: 380px;
+  }
+  section.third .h11 {
+    font-size: 19px;
+  }
+  section.third .h31 {
+    font-size: 14px;
+  }
+  section.four .h12 {
+    font-size: 14px;
+  }
+  section.four .h32 {
+    font-size: 10px;
+  }
+  section.four .button4 {
+    width: 250px;
+    height: 45px;
+  }
+  section.four .button5 {
+    width: 250px;
+    height: 45px;
+  }
+  section.five .t1{
+    font-size: 13px;
+    width: 300px;
+  }
+  section.six .s1{
+    font-size: 20px;
+  }
+  section.six .s2{
+    font-size: 14px;
+  }
+  footer .vv{
+    font-size: 6px;
+  }
+  footer .foot{
+    font-size: 6px;
+  }
+  footer{
+    height: 900px;
+  }
 }
